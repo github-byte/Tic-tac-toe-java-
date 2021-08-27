@@ -6,8 +6,8 @@ public class ticTacToe {
 	
         char[][] board=new char[3][3];
         
-        for(int i=0;i<board.length;i++){
-            for(int j=0;j<board[0].length;j++){
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
                 board[i][j]='-';
             }
         }
@@ -37,7 +37,7 @@ public class ticTacToe {
         String n2="";
         boolean turn=true;
         int count=0;
-        for(int i=0;i<board.length*board[0].length;i++){
+        for(int i=0;i<9;i++){
             
             if(turn==true){
            System.out.print("Enter Player 1:" );
@@ -97,7 +97,7 @@ public class ticTacToe {
         }
         
         
-        if(count==board.length*board[0].length){
+        if(count==9){
             System.out.println("Draw!!!");
         }
         
